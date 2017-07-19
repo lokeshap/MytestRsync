@@ -1,23 +1,7 @@
 # BELOW PARAMETERS ARE MANDATORY. PLEASE DONT DELETE THEM
-Source_Host_Details:
-        Host_Name: 'aa1-m'
-        endpoint_url: 'http://10.60.206.50:9090'
-        ip: '10.60.206.50'
-        port: 9090
-        aws_access_key_id: 'lokesh'
-        aws_secret_access_key: 'lokesh'
-Destination_Host_Details:
-        Host_Name: 'aa2-m'
-        endpoint_url: 'http://10.60.207.120:80'
-        ip: '10.60.207.120'
-        port: 80
-        aws_access_key_id: 'AK0V5H3SBAAVH7O34J7D'
-        aws_secret_access_key: 'm2pYCQ2C3eODE6rm7/Y5JiAddHOfP8+ar4coKuEE'
-Host_Connect_Timeout : 70  # Default timeout to connect to host
-Read_Connect_Timeout : 120  # Default timeout to read the object in a bucket
-Bucket_Name: 'million2'  # keys from the bucket to be copied
-Number_of_Process : 10  # Number of process to achieve multiprocessing. Each process will copy single key in a bucket.
-Number_of_Thread : 0 # Recommended. If 0, default number of threads will be considered by boto3 library
-Number_of_Keys : 0 # If 0, all keys in the bucket will get copied. Else you can specify specific number of objects to be copied. e.g. 30
+Number_of_Folders : 2  # Number of process to achieve multiprocessing. Each process will copy single key in a bucket.
+Number_of_Files : 2 # Recommended. If 0, default number of threads will be considered by boto3 library
+Source_Path : /dump/src1
+Destination_Path : /dump/dst1/
 DB_IP: '10.60.208.50'
 Email_ID : 'Lokesh.AP@sandisk.com'
